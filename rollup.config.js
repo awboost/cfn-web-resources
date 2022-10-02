@@ -12,7 +12,7 @@ export default {
   input: 'lib/index.js',
 
   output: {
-    file: 'dist/bundle.js',
+    file: 'dist/index.js',
     format: 'cjs',
     sourcemap: true,
   },
