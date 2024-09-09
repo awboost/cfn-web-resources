@@ -31,7 +31,7 @@
   "scripts": {
     "build": "npm run clean && npm run compile && npm run lint && npm run bundle",
     "bundle": "cfnassets build --config assets.config.json",
-    "clean": "rm -rf lib/ cjs/ *.tsbuildinfo",
+    "clean": "rm -rf dist/ lib/ *.tsbuildinfo",
     "compile": "npm run index && tsc",
     "index": "node makeIndex.js src/",
     "lint": "eslint src/ --ext=ts",
