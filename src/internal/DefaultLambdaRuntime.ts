@@ -1,1 +1,1 @@
-export const DefaultLambdaRuntime = 'nodejs16.x';
+export const DefaultLambdaRuntime = 'nodejs20.x';

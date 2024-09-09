@@ -8,13 +8,15 @@ import { terser } from 'rollup-plugin-terser';
 const DEBUGGING = !!process.env.DEBUGGING;
 const external = [...builtin];
 
+/** @type {import('rollup').RollupOptions} */
 export default {
   input: 'lib/index.js',
 
   output: {
-    file: 'index.js',
-    format: 'cjs',
+    file: 'index.mjs',
+    format: 'esm',
     sourcemap: true,
+    inlineDynamicImports: true,
   },
 
   plugins: [
